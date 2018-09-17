@@ -4,15 +4,12 @@ import kha.Canvas;
 
 class TileGroup
 {
-//	public var tile:Tile;
-
 	public var x : Float = 0.0;
 	public var y : Float = 0.0;
 
 	private var data:Array<DisplayTile>;
 
-	public function new(/*t : Tile*/) {
-	//	tile = t;
+	public function new() {
 		data = [];
 	}
 

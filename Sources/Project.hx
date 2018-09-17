@@ -174,7 +174,7 @@ class Project {
         var tileGroups = objectsLayer.tileset.groups;
 
         // Just reading number of tiles in each tile group from the editor
-		for (key in tileGroups.keys())
+        for (key in tileGroups.keys())
         {
             var group = tileGroups.get(key);
             trace(key + ": " + group.tiles.length);
@@ -182,20 +182,20 @@ class Project {
 
         trace(tileProps.length);
 
-		// Iterating through all records on `collide` sheet
+        // Iterating through all records on `collide` sheet
         /*for (coll in Data.collide.all)
         {
             trace(coll.id);
         }*/
 
-		for (image in Data.images.all)
+        for (image in Data.images.all)
         {
             var name = image.name;
 
             // Sample database have sheet `images` with the `stats` column with the type of `Flags`
             // `Flags` objects have `has()` method,  which allows to read individual flag value
             // this way:
-			var canClimb = image.stats.has(canClimb);
+            var canClimb = image.stats.has(canClimb);
             // or this way:
             canClimb = image.stats.has(Data.Images_stats.canClimb);
             // reading the values of the rest of the flags
